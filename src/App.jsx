@@ -15,7 +15,7 @@ function App() {
 
   return (
     <>
-      <main className="bg-zinc-800 flex flex-col gap-12 w-full h-dvh">
+      <main className="bg-zinc-800 flex flex-col w-full h-dvh">
         <Presentation />
         <Information />
       </main>
