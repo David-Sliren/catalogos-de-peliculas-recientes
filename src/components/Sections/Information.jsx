@@ -4,8 +4,8 @@ import Merlina from "/src/assets/img/merlina.webp";
 
 function Information() {
   return (
-    <section className="relative z-0 w-full min-h-[50dvh] bg-green-300">
-      <ImgBackGround image={Merlina} />
+    <section className="relative z-0 w-full min-h-dvh md:min-h-[50dvh] bg-green-300">
+      <ImgBackGround image={Merlina} moveImg="object-[-880px]" />
     </section>
   );
 }
