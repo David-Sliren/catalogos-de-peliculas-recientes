@@ -5,7 +5,7 @@ function GeneralContent({ children, clases = "" }) {
     <section
       className={`${clases} relative z-0 grid grid-cols-4 gap-6 bg-amber-200 w-full px-6 xl:grid-cols-12`}
     >
-      {children}{" "}
+      {children}
     </section>
   );
 }
