@@ -3,12 +3,14 @@ import Avenger from "/src/assets/img/Avengers.webp";
 import { ChevronsDown } from "lucide-react";
 import { motion } from "motion/react";
 import ImgBackGround from "../ImgBackGround";
+import ShadowGradient from "../ShadowGradient";
+import AlternateText from "../AlternateText";
 
 function Presentation() {
   return (
     <section className="relative z-0 grid grid-cols-4 gap-6 bg-amber-200 w-full min-h-dvh px-6 xl:grid-cols-12">
       <ImgBackGround image={Avenger} moveImg="object-[-780px]" />
-      <div className="absolute top-0 left-0 w-full h-full bg-linear-to-b from-black/20 to-black from-0% to-60% md:to-100% -z-1"></div>
+      <ShadowGradient clases="from-0% to-60%" />
 
       <motion.div
         transition={{
@@ -28,18 +30,11 @@ function Presentation() {
         </h3>
         <ChevronsDown size={24} color="white" className="text-shadow-lg" />
       </motion.div>
-
-      <section className="  col-span-full w-fit h-fit md:pl-6 mt-120 md:col-span-8 md:mt-10 md:-translate-x-6 lg:translate-0 ">
-        <h1 className="text-white font-bebas font-bold text-4xl -tracking-tighter text-shadow-lg xl:text-5xl 2xl:text-6xl">
-          CONTENIDO DE CALIDAD
-        </h1>
-        <h2 className="font-montserrat text-white mt-5 -tracking-tight font-bold  text-shadow-md text-md md:w-115 lg:w-140 xl:w-166 2xl:w-210">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis
-          ex ullam iste animi facilis sit minus temporibus repellat, cum nobis
-          veniam! Esse labore, provident rerum quisquam quo nulla possimus
-          ipsum?
-        </h2>
-      </section>
+      <AlternateText
+        clasesP="top-125 md:top-10 scale-90"
+        clasesH1="font-bebas_nue text-8xl tracking-widest"
+        clasesH2="font-montserrat font-bold text-lg"
+      />
     </section>
   );
 }
