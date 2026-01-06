@@ -5,10 +5,11 @@ import { motion } from "motion/react";
 import ImgBackGround from "../ImgBackGround";
 import ShadowGradient from "../ShadowGradient";
 import AlternateText from "../AlternateText";
+import GeneralContent from "../GeneralContent";
 
 function Presentation() {
   return (
-    <section className="relative z-0 grid grid-cols-4 gap-6 bg-amber-200 w-full min-h-dvh px-6 xl:grid-cols-12">
+    <GeneralContent clases="min-h-dvh">
       <ImgBackGround image={Avenger} moveImg="object-[-780px]" />
       <ShadowGradient clases="from-0% to-60%" />
 
@@ -35,7 +36,7 @@ function Presentation() {
         clasesH1="font-bebas_nue text-6xl md:text-8xl tracking-widest lg:w-150 xl:w-fit"
         clasesH2="font-montserrat font-bold text-md md:w-115 lg:w-140 xl:w-166 2xl:w-210"
       />
-    </section>
+    </GeneralContent>
   );
 }
 

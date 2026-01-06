@@ -9,6 +9,7 @@ import "@fontsource-variable/montserrat";
 import Card from "./components/Card";
 import Presentation from "./components/sections/Presentation";
 import Information from "./components/sections/Information";
+import Catalogo from "./components/sections/Catalogo";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,6 +19,7 @@ function App() {
       <main className="bg-zinc-800 flex flex-col w-full h-dvh">
         <Presentation />
         <Information />
+        <Catalogo />
       </main>
     </>
   );
