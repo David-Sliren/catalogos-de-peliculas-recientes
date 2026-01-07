@@ -1,5 +1,6 @@
-import { CircleArrowRight } from "lucide-react";
 import { motion } from "motion/react";
+import { CircleArrowRight } from "lucide-react";
+
 function CardCatalogo({ text = "catalogo" }) {
   return (
     <motion.article
