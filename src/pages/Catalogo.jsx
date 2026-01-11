@@ -43,6 +43,7 @@ function Catalogo() {
             <Card
               key={item.id}
               imgUrl={`https://image.tmdb.org/t/p/w500${item.poster_path}`}
+              imgAlt={item.title}
               textTitle={item.title}
             />
           );

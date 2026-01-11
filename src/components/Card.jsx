@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "motion/react";
+import ImgLoader from "./ImgLoader";
 
 function Card({ imgUrl, imgAlt, textTitle = "movie the lay" }) {
   return (
@@ -13,12 +14,8 @@ function Card({ imgUrl, imgAlt, textTitle = "movie the lay" }) {
       whileTap={{ scale: 0.9 }}
       className=" flex flex-col gap-1 aspect-[2/3]  items-center rounded-md overflow-hidden cursor-pointer"
     >
-      <div className="w-full max-h-[75%] overflow-hidden">
-        <img
-          src={imgUrl}
-          alt={imgAlt}
-          className="w-full h-full object-cover object-top"
-        />
+      <div className="relative w-full aspect-[2/3] max-h-[75%] overflow-hidden">
+        <ImgLoader src={imgUrl} alt={imgAlt} />
       </div>
       <div className="bg-zinc-600/60 flex justify-center items-center w-full h-[25%] max-h-full px-2">
         <p
