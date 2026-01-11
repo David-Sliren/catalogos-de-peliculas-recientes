@@ -11,7 +11,7 @@ export function useMovie(route, page = 1) {
       callApi(
         `https://api.themoviedb.org/3/${url}?language=es-MX&page=${page}`
       ),
-    staleTime: 1 * 60 * 1000,
+    staleTime: 12 * 60 * 60 * 1000,
   });
 
   return {
