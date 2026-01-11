@@ -1,9 +1,13 @@
-import React from "react";
+import { motion } from "motion/react";
 
 function AlternateText({ clasesP, clasesH1, clasesH2, textH1, textH2 }) {
   return (
-    <section
-      className={`${clasesP} relative  col-span-full w-fit h-fit  md:col-span-8 md:-translate-x-6 lg:translate-0`}
+    <motion.section
+      initial={{ opacity: 0, y: 100 }}
+      viewport={{ once: true, amount: 0.5 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.8 }}
+      className={`${clasesP} relative  col-span-full w-fit h-fit  md:col-span-8 md:-translate-x-6 lg:translate-0 overflow-hidden`}
     >
       <h1 className={`${clasesH1} text-white text-4xl text-shadow-lg`}>
         {textH1}
@@ -13,7 +17,7 @@ function AlternateText({ clasesP, clasesH1, clasesH2, textH1, textH2 }) {
       >
         {textH2}
       </h2>
-    </section>
+    </motion.section>
   );
 }
 
