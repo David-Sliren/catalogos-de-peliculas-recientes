@@ -2,7 +2,7 @@ import React from "react";
 import Card from "../components/Card";
 import { useMovie } from "../hooks/useTankStack";
 import { useState } from "react";
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import Btn from "../components/Btn";
 import ErrorControl from "../components/ErrorControl";
 
@@ -24,8 +24,15 @@ function Catalogo() {
   console.log(catalogo.data);
 
   return (
-    <main className="flex flex-col justify-center items-center bg-linear-to-r from-sky-500 min-h-dvh py-2 ">
-      {/* <header>Hola</header> */}
+    <main className="grid grid-rows-[auto_1fr_auto] items-center bg-linear-to-r from-sky-500 min-h-dvh py-2 ">
+      <header className=" px-6 flex justify-between items-center">
+        <Link to="/">
+          <Btn isLeft={true} />
+        </Link>
+        <span className="bg-black flex justify-center items-center h-12 w-20 text-lg font-inter font-semibold text-white rounded-full transition-discrete duration-500 hover:bg-white hover:text-zinc-900 ">
+          {newpage}
+        </span>
+      </header>
 
       <section className="grid grid-cols-2 w-full h-full justify-center gap-4 p-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-6">
         {catalogo.isError && <ErrorControl text={catalogo.error.message} />}
@@ -42,13 +49,10 @@ function Catalogo() {
         })}
       </section>
 
-      <section className="flex justify-evenly items-center w-full py-2">
+      <footer className="flex justify-evenly items-center w-full py-2">
         <Btn text="Prev" onActive={prevPage} isLeft={true} />
-        <span className="bg-black flex justify-center items-center size-10 text-lg font-inter font-semibold text-white rounded-full transition-discrete duration-500 hover:bg-white hover:text-zinc-900 ">
-          {newpage}
-        </span>
         <Btn text="Next" onActive={nextPage} />
-      </section>
+      </footer>
     </main>
   );
 }
