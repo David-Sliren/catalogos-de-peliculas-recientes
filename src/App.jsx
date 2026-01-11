@@ -4,11 +4,15 @@ import "@fontsource-variable/montserrat";
 
 import Home from "./pages/Home";
 import Catalogo from "./pages/Catalogo";
+import { Route, Routes } from "react-router";
 
 function App() {
   return (
     <>
-      <Catalogo />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/:title" element={<Catalogo />} />
+      </Routes>
     </>
   );
 }
