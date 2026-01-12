@@ -13,7 +13,7 @@ import { sectionP1 } from "../../constants/ContentSection";
 function Presentation() {
   return (
     <GeneralContent clases="min-h-dvh">
-      <ImgBackGround image={Avenger} moveImg="object-[-780px]" />
+      <ImgBackGround image={Avenger} moveImg="object-[78%]" />
       <ShadowGradient clases="from-0% to-60%" />
 
       <motion.div

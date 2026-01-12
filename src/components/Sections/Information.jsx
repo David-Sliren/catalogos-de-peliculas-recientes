@@ -10,7 +10,7 @@ import { sectionP2 } from "../../constants/ContentSection";
 function Information() {
   return (
     <GeneralContent clases="min-h-dvh md:min-h-[80dvh]">
-      <ImgBackGround image={Merlina} moveImg="object-[-880px]" />
+      <ImgBackGround image={Merlina} moveImg="object-[80%]" />
       <ShadowGradient clases="from-0% to-70%" />
       <AlternateText
         textH1={sectionP2.h1}
