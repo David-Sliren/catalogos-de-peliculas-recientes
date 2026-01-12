@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import Btn from "../Btn";
 import { ChevronsDown } from "lucide-react";
 
 import Avenger from "../../assets/img/Avengers.webp";

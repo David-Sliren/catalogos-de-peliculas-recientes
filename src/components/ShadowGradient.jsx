@@ -1,5 +1,3 @@
-import React from "react";
-
 function ShadowGradient({ clases = "" }) {
   return (
     <div

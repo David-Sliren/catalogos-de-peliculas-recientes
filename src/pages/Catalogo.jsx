@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../components/Card";
-import { useMovie } from "../hooks/useTankStack";
+import { useMovie } from "../hooks/useMoviesQuery";
 import { useState } from "react";
 import { Link, useParams } from "react-router";
 import Btn from "../components/Btn";

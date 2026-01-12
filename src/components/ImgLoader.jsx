@@ -1,6 +1,5 @@
 import { ImageOff } from "lucide-react";
 import { LoaderPinwheel } from "lucide-react";
-import React from "react";
 import { useState } from "react";
 
 function ImgLoader({ src, alt }) {

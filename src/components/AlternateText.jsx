@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { ChevronsRight } from "lucide-react";
 
 function AlternateText({ clasesP, clasesH1, clasesH2, textH1, textH2 }) {
   return (

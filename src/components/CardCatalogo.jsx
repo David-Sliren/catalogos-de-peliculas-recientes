@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
-import { CircleArrowRight } from "lucide-react";
 import { Link } from "react-router";
+import { CircleArrowRight } from "lucide-react";
 
 function CardCatalogo({ text = "catalogo", router = "" }) {
   return (

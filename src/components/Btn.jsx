@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "motion/react";
+import { TvMinimalPlay } from "lucide-react";
 
 function Btn({ text, onActive, isLeft }) {
   return (

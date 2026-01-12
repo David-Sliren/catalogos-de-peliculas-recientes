@@ -10,7 +10,7 @@ export async function callApi(url) {
   });
 
   if (!result.ok) {
-    throw new Error("Hubo un problema");
+    throw new Error(`Error ${result.status}: ${result.statusText}`);
   }
 
   return result.json();
