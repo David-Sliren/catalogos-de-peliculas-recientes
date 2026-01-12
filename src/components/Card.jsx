@@ -2,6 +2,16 @@ import React from "react";
 import { motion } from "motion/react";
 import ImgLoader from "./ImgLoader";
 
+/**
+ * Componente de Tarjeta para mostrar una película individual.
+ * Incluye animaciones de entrada, hover y tap usando Framer Motion.
+ *
+ * @component
+ * @param {object} props
+ * @param {string} props.imgUrl - URL de la imagen del póster.
+ * @param {string} props.imgAlt - Texto alternativo para la imagen.
+ * @param {string} [props.textTitle="movie the lay"] - Título de la película.
+ */
 function Card({ imgUrl, imgAlt, textTitle = "movie the lay" }) {
   return (
     <motion.article

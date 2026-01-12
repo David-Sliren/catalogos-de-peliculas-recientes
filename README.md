@@ -1,32 +1,69 @@
-# 🎬 Movie Catalog Pro - Next Gen
+# 🎬 Catálogos de Películas Recientes
 
-Un explorador de cine de alto rendimiento construido con las tecnologías más modernas del ecosistema React. Esta aplicación consume la API de TMDB para ofrecer una experiencia de usuario fluida, animada y optimizada mediante gestión inteligente de caché.
+Una aplicación web moderna y reactiva para explorar catálogos de películas (Populares, Tendencias, Próximos estrenos) utilizando la API de The Movie Database (TMDB).
 
-## 🚀 Demo
-Explora el catálogo: [Movie Catalog Live](https://david-sliren.github.io/catalogos-de-peliculas-recientes/)
+Construida con **React**, **Vite**, **Tailwind CSS**, y **Framer Motion** para una experiencia de usuario fluida y visualmente atractiva.
 
-## ✨ Características de Vanguardia
-- **React 19 Core:** Aprovechando las últimas mejoras de rendimiento y hooks del framework.
-- **TanStack Query (v5):** Gestión de estado asíncrono, almacenamiento en caché inteligente y carga optimizada de datos.
-- **Framer Motion:** Transiciones suaves de entrada y micro-interacciones en las tarjetas de películas.
-- **Tailwind CSS v4:** Estilizado moderno utilizando el motor de alto rendimiento basado en variables CSS.
+## ✨ Características
 
-## 🛠️ Stack Tecnológico
-* **Framework:** React 19
-* **Fetching & Cache:** TanStack Query
-* **Animaciones:** Framer Motion
-* **Estilos:** Tailwind CSS v4
-* **Build Tool:** Vite
+*   **Exploración de Películas:** Navega entre categorías como "Recientes", "Populares" y "Más vistas".
+*   **Diseño Responsivo:** Interfaz adaptada a móviles, tablets y escritorio gracias a Tailwind CSS.
+*   **Animaciones Suaves:** Transiciones de página y micro-interacciones impulsadas por Framer Motion.
+*   **Gestión de Estado Eficiente:** Uso de `TanStack Query` para el caché de datos, revalidación y manejo de estados de carga/error.
+*   **Enrutamiento Dinámico:** Navegación SPA (Single Page Application) con React Router v7.
 
-## ⚙️ Configuración DX (VS Code)
-Para el mejor soporte de **Tailwind v4** y sugerencias automáticas:
+## 🛠️ Tecnologías
 
-```json
-{
-  "editor.quickSuggestions": { "strings": true },
-  "tailwindCSS.classFunctions": ["tw", "tw.style"],
-  "tailwindCSS.classAttributes": ["style", "className"],
-  "tailwindCSS.includeLanguages": {
-    "javascriptreact": "javascriptreact"
-  }
-}
+*   [React](https://react.dev/) - Librería de UI.
+*   [Vite](https://vitejs.dev/) - Build tool y entorno de desarrollo.
+*   [Tailwind CSS](https://tailwindcss.com/) - Framework de estilos utility-first (v4).
+*   [Framer Motion](https://www.framer.com/motion/) - Librería de animación.
+*   [TanStack Query](https://tanstack.com/query/latest) - Gestión de estado asíncrono y data fetching.
+*   [Lucide React](https://lucide.dev/) - Iconografía.
+
+## 🚀 Instalación y Uso
+
+### Prerrequisitos
+
+*   Node.js (versión 18 o superior recomendada).
+*   pnpm (gestor de paquetes recomendado).
+
+### Pasos
+
+1.  **Clonar el repositorio:**
+    ```bash
+    git clone https://github.com/tu-usuario/Catalogos-de-peliculas-recientes.git
+    cd Catalogos-de-peliculas-recientes
+    ```
+
+2.  **Instalar dependencias:**
+    ```bash
+    pnpm install
+    ```
+
+3.  **Configurar Variables de Entorno:**
+    Crea un archivo `.env` en la raíz del proyecto y añade tu clave de API de TMDB:
+    ```env
+    VITE_TMDB_KEY=tu_api_key_aqui
+    ```
+    > Puedes obtener una clave registrándote en [The Movie Database](https://www.themoviedb.org/).
+
+4.  **Ejecutar en desarrollo:**
+    ```bash
+    pnpm dev
+    ```
+    Abre tu navegador en `http://localhost:5173`.
+
+## 📂 Estructura del Proyecto
+
+Para una visión detallada de la arquitectura, consulta el archivo [ARCHITECTURE.md](./ARCHITECTURE.md).
+
+## 📄 Scripts Disponibles
+
+*   `pnpm dev`: Inicia el servidor de desarrollo.
+*   `pnpm build`: Construye la aplicación para producción.
+*   `pnpm lint`: Ejecuta ESLint para analizar el código.
+*   `pnpm preview`: Previsualiza la build de producción localmente.
+
+---
+Desarrollado por [David Sliren](https://github.com/David-Sliren)
