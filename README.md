@@ -1,4 +1,4 @@
-# 🎬 Catálogos de Películas Recientes
+# 🎬 Movies New
 
 Una aplicación web moderna y reactiva para explorar catálogos de películas (Populares, Tendencias, Próximos estrenos) utilizando la API de The Movie Database (TMDB).
 
